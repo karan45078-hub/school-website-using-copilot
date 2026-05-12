@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Greenfield Academy - A leading educational institution providing quality education">
+    <meta name="keywords" content="school, education, courses, academy">
+    <title>Greenfield Academy - Excellence in Education</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75' fill='%23667eea'>📚</text></svg>">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-icon">📚</span>
+                <span class="logo-text">Greenfield Academy</span>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#courses" class="nav-link">Courses</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Welcome to Greenfield Academy</h1>
+            <p class="hero-subtitle">Excellence in Education, Excellence in Life</p>
+            <button class="cta-button" id="welcomeBtn">Get Started</button>
+            <div class="welcome-message" id="welcomeMessage">
+                <p>🎓 Begin your journey to success today!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Greenfield Academy is committed to providing world-class education that nurtures students' intellectual, emotional, and social development. With experienced faculty and modern facilities, we create an environment where students can thrive and reach their full potential.</p>
+            <div class="features">
+                <div class="feature-card">
+                    <span class="feature-icon">👨‍🏫</span>
+                    <h3>Expert Educators</h3>
+                    <p>Highly qualified and experienced teachers dedicated to student success</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">🏫</span>
+                    <h3>Modern Facilities</h3>
+                    <p>State-of-the-art classrooms, labs, and learning resources</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">🌍</span>
+                    <h3>Global Perspective</h3>
+                    <p>International curriculum fostering global citizenship</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="courses">
+        <div class="container">
+            <h2>Our Courses</h2>
+            <div class="courses-grid">
+                <div class="course-card">
+                    <div class="course-icon">📖</div>
+                    <h3>English Literature</h3>
+                    <p>Explore classic and contemporary literature with expert guidance</p>
+                    <span class="course-level">Beginner - Advanced</span>
+                </div>
+                <div class="course-card">
+                    <div class="course-icon">🔬</div>
+                    <h3>Science</h3>
+                    <p>Hands-on learning in Physics, Chemistry, and Biology</p>
+                    <span class="course-level">Beginner - Advanced</span>
+                </div>
+                <div class="course-card">
+                    <div class="course-icon">🧮</div>
+                    <h3>Mathematics</h3>
+                    <p>Develop problem-solving skills through comprehensive math curriculum</p>
+                    <span class="course-level">Beginner - Advanced</span>
+                </div>
+                <div class="course-card">
+                    <div class="course-icon">🌐</div>
+                    <h3>Computer Science</h3>
+                    <p>Learn programming, web development, and digital literacy</p>
+                    <span class="course-level">Beginner - Advanced</span>
+                </div>
+                <div class="course-card">
+                    <div class="course-icon">🎨</div>
+                    <h3>Arts & Design</h3>
+                    <p>Creative expression through visual arts, music, and design</p>
+                    <span class="course-level">Beginner - Advanced</span>
+                </div>
+                <div class="course-card">
+                    <div class="course-icon">⚽</div>
+                    <h3>Physical Education</h3>
+                    <p>Sports training and fitness programs for holistic development</p>
+                    <span class="course-level">Beginner - Advanced</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <div class="info-card">
+                        <span class="info-icon">📍</span>
+                        <h3>Address</h3>
+                        <p>123 Education Street<br>Knowledge City, KC 12345</p>
+                    </div>
+                    <div class="info-card">
+                        <span class="info-icon">📞</span>
+                        <h3>Phone</h3>
+                        <p>+1 (555) 123-4567</p>
+                    </div>
+                    <div class="info-card">
+                        <span class="info-icon">✉️</span>
+                        <h3>Email</h3>
+                        <p>info@greenfieldacademy.com</p>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required>
+                        <span class="error-message" id="nameError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required>
+                        <span class="error-message" id="emailError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject *</label>
+                        <input type="text" id="subject" name="subject" required>
+                        <span class="error-message" id="subjectError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                        <span class="error-message" id="messageError"></span>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Send Message</button>
+                    <div class="success-message" id="successMessage"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About School</h3>
+                    <p>Greenfield Academy is dedicated to shaping future leaders through quality education and character development.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#courses">Courses</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">f</a>
+                        <a href="#" aria-label="Twitter">𝕏</a>
+                        <a href="#" aria-label="Instagram">📷</a>
+                        <a href="#" aria-label="LinkedIn">in</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Greenfield Academy. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
